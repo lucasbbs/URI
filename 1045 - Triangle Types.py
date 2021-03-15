@@ -1,6 +1,8 @@
 array = list(map(float,input().split()))
 array.sort(reverse=True)
-a, b, c = array
+a = array[0]
+b = array[1]
+c = array[2]
 if a >= b + c:
     print('NAO FORMA TRIANGULO')
 else:
@@ -12,5 +14,5 @@ else:
       print('TRIANGULO ACUTANGULO')
   if a==b==c:
       print('TRIANGULO EQUILATERO')
-  elif a == b or a == c or b == a or b == c or c == a or c ==b:
+  if (a==b!=c) or (a!=b==c) or (b==a!=c):
       print('TRIANGULO ISOSCELES')
