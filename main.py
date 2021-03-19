@@ -1,3 +1,6 @@
-N = int(input())
-for i in range(1,N+1):
-  if i%2 ==0: print(f'{i}^2 = {i**2}')
+x = int(input())
+y = int(input())
+array = [x,y]
+array.sort()
+list = list(range(array[0],array[1]+1))
+print(sum([n for n in list if n % 13 != 0]))
